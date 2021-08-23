@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    <title>Flexbox site</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="top">
+            <a href="../main.html">Site them. Me</a>
+        </header>
+        <nav class="flex-nav">
+            <a href="#" class="toggleNav">&#9776; Menu</a>
+            <ul>
+                <li>
+                    <a href="">Item 1</a>
+                </li>
+
+                <li>
+                    <a href="">Item 2</a>
+                </li>
+
+                <li>
+                    <a href="">Item 3</a>
+                </li>
+
+                <li>
+                    <a href="">Item 4</a>
+                </li>
+
+                <li class="social">
+                    <a href="">
+                        <i class="fa fa-telegram fa-lg" aria-hidden="true"></i>
+                    </a>
+                </li>
+
+                <li class="social">
+                    <a href="">
+                        <i class="fa fa-twitter fa-lg" aria-hidden="true"></i>
+                    </a>
+                </li>
+
+                <li class="social">
+                    <a href="">
+                        <i class="fa fa-github fa-lg" aria-hidden="true"></i>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+        <section class="banner">
+            <img src="http://lorempixel.com/1000/600/abstract" alt="">
+        </section>
+        <section class="content">
+            <p>Тут може бути ваша реклама</p>
+            <p>Here could be your advertisement</p>
+        </section>
+        <section class="signup">
+            <form action="">
+                <input type="text" placeholder="Name">
+                <input type="email" placeholder="Email">
+                <input type="submit" value="Sign up">
+            </form>
+        </section>
+
+        <footer>&copy Movchan Vitalii</footer>
+    </div>
+    <!--wrapper-->
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script>
+        $(function() {
+            $('.toggleNav').on('click', function() {
+                $('.flex-nav ul').toggleClass('open');
+            });
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,111 @@
+html {
+	box-sizing: border-box;
+}
+
+html, body {
+	height: 100%;
+}
+
+* {
+	box-sizing: inherit;
+}
+
+body {
+	background: linear-gradient(120deg, #2376ee 0%, #c16ecf 100%);
+	font-family: sans-serif;
+	font-size: 20px;
+	margin: 0;
+}
+.top {
+	margin: 10px 0;
+}
+img {
+	width: 100%;
+}
+a {
+	color: white;
+	text-decoration: none;
+	width: 100%;
+	text-align: center;
+	letter-spacing: 2px;
+	padding: 20px 5px;
+	background: rgba(0, 0, 0, 0.2);
+	display: inline-block;
+}
+
+a:hover {
+	background: rgba(0, 0, 0, 0.3);
+}
+
+.wrapper {
+	max-width: 1000px;
+	margin: 0 auto;
+	padding: 50px;
+}
+
+.flex-nav ul {
+	margin: 0;
+	padding: 0;
+	display: flex;
+	list-style: none;
+	border: 1px solid black;
+}
+
+.flex-nav li {
+	flex-grow: 2;
+}
+
+.flex-nav .social {
+	flex-grow: 1;
+}
+
+section, footer {
+	color: white;
+	padding: 20px;
+	background: rgba(0, 0, 0, 0.2);
+	margin: 20px 0;
+	text-align: center;
+}
+
+.toggleNav {
+	display: none;
+}
+
+@media (max-width: 1000px) {
+	.flex-nav ul {
+		flex-wrap: wrap;
+	}
+
+	.flex-nav li {
+		flex: 1 1 50%;
+	}
+
+	.flex-nav .social {
+		flex: 1 1 25%;
+	}
+}
+
+@media (max-width: 500px) {
+	.flex-nav li {
+		flex-basis: 100%;
+	}
+
+	.wrapper {
+		display: flex;
+		flex-direction: column;
+	}
+	/*top, flex-nav, banner, content, signup, footer*/
+	.flex-nav {order: 1}
+	.top {order: 2}
+	.content {order: 3}
+	.signup {order: 4}
+	.banner {order: 5}
+	footer {order: 6}
+
+	.flex-nav ul{display: none;}
+	.toggleNav {display: block;}
+
+	.flex-nav ul.open {
+		display: block;
+	}
+}

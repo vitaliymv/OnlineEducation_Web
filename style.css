@@ -1,0 +1,42 @@
+a {
+    color: white;
+    text-decoration: none;
+}
+
+body {
+    background: rgb(54, 48, 48);
+}
+
+.heading {
+    font-size: 40px;
+}
+
+.card {
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.header {
+    width: 450px;
+    height: 200px;
+    background: rgba(100, 106, 100, 0.5);
+}
+
+body {
+    display: flex;
+    justify-content: space-around;
+}
+
+.desc {
+    text-align: start;
+    display: none;
+}
+
+.card:hover .heading {
+    display: none;
+}
+
+.card:hover .desc {
+    display: block;
+}

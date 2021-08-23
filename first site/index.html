@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Персональный сайт</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <div class="add_header">
+        <div class="container">
+
+            <p class="slogan">Tell the world about your ideas</p>
+
+            <a data-toggle="modal" href="#ModalWindow1">
+                <div class="button">Write article</div>
+            </a>
+
+        </div>
+    </div>
+    <header>
+        <div class="container">
+            <a href="../main.html"><img src="reading.png" class="logo"></a>
+
+            <nav>
+                <ul>
+                    <li><a href="">About us</a></li>
+                    <li><a href="">Write</a></li>
+                    <li><a href="">Contact</a></li>
+                    <li><a href="" class="login">Sign in</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+
+    <div class="content">
+        <div class="container">
+            <div class="sidebar">
+                UP
+            </div>
+            <div id="articles" class="articles">
+                <div class="article">
+                    <div class="article_text">
+                        <p class="heading">Heading 1</p>
+                        <p class="desc">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni repudiandae nobis, ipsum, perspiciatis nulla laudantium eligendi.</p>
+                        <p class="date">11 Dec</p>
+                    </div>
+                    <div class="article_img">
+                        <img src="https://source.unsplash.com/random/150x150">
+                    </div>
+                </div>
+                <!---->
+                <div class="article">
+                    <div class="article_text">
+                        <p class="heading">Heading 2</p>
+                        <p class="desc">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni repudiandae nobis, ipsum, perspiciatis nulla laudantium eligendi.</p>
+                        <p class="date">11 Dec</p>
+                    </div>
+                    <div class="article_img">
+                        <img src="https://source.unsplash.com/random/150x151">
+                    </div>
+                </div>
+                <div class="article">
+                    <div class="article_text">
+                        <p class="heading">Heading 3</p>
+                        <p class="desc">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni repudiandae nobis, ipsum, perspiciatis nulla laudantium eligendi.</p>
+                        <p class="date">11 Dec</p>
+                    </div>
+                    <div class="article_img">
+                        <img src="https://source.unsplash.com/random/151x150">
+                    </div>
+                </div>
+                <div class="article">
+                    <div class="article_text">
+                        <p class="heading">Heading 4</p>
+                        <p class="desc">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni repudiandae nobis, ipsum, perspiciatis nulla laudantium eligendi.</p>
+                        <p class="date">11 Dec</p>
+                    </div>
+                    <div class="article_img">
+                        <img src="https://source.unsplash.com/random/150x152">
+                    </div>
+                </div>
+                <div class="article">
+                    <div class="article_text">
+                        <p class="heading">Heading 5</p>
+                        <p class="desc">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni repudiandae nobis, ipsum, perspiciatis nulla laudantium eligendi.</p>
+                        <p class="date">11 Dec</p>
+                    </div>
+                    <div class="article_img">
+                        <img src="https://source.unsplash.com/random/152x150">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--content-->
+    <div class="modal fade" id="ModalWindow1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title ">Add article</h5>
+                    <button type="button" class="close" data-dismiss="modal">x</button>
+                </div>
+                <!--modal-header-->
+                <div class="modal-body">
+                    <form>
+                        <input id="name" type="text" placeholder="Heading"><br>
+                        <textarea id="desc" placeholder="Description"></textarea><br>
+                        <input id="date" type="date"><br>
+                        <input type="submit" id="sbm" class="add">Add</button>
+                    </form>
+
+
+                </div>
+                <!--modal-body-->
+                <div class="modal-footer ">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+                <!--modal-footer-->
+            </div>
+            <!--modal-content-->
+        </div>
+        <!--modal-dialog-->
+    </div>
+    <!--modal fade-->
+    <script src="script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+</body>
+
+</html>
